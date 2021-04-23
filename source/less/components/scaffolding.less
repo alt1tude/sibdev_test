@@ -1,0 +1,121 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/open-sans-cyrillic-600.eot"),
+    /* IE9 Compat Modes */
+    url("../fonts/open-sans-cyrillic-600.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */
+    url("../fonts/open-sans-cyrillic-600.woff2") format("woff2"),
+    url("../fonts/open-sans-cyrilic-600.woff") format("woff"),
+    url("../fonts/open-sans-v18-cyrillic-600.ttf") format("truetype"),
+    /* Safari, Android, iOS */
+    url("../fonts/open-sans-v18-cyrillic-600.svg#OpenSans") format("svg"),
+    /* Legacy iOS */
+    local("Open Sans");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/open-sans-cyrillic-regular.eot"),
+    /* IE9 Compat Modes */
+    url("../fonts/open-sans-cyrillic-regular.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */
+    url("../fonts/open-sans-cyrillic-regular.woff2") format("woff2"),
+    url("../fonts/open-sans-cyrillic-regular.woff") format("woff"),
+    url("../fonts/open-sans-v18-cyrillic-regular.ttf") format("truetype"),
+    /* Safari, Android, iOS */
+    url("../fonts/open-sans-v18-cyrillic-regular.svg#OpenSans") format("svg"),
+    /* Legacy iOS */
+    local("Open Sans");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto-cyrillic-700.eot"),
+    /* IE9 Compat Modes */
+    url("../fonts/roboto-cyrillic-700.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */
+    url("../fonts/roboto-cyrillic-700.woff2") format("woff2"),
+    url("../fonts/roboto-cyrillic-700.woff") format("woff"),
+    url("../fonts/roboto-cyrillic-700.ttf") format("truetype"),
+    /* Safari, Android, iOS */
+    url("../fonts/roboto-cyrillic-700.svg#Roboto") format("svg"),
+    /* Legacy iOS */
+    local("Roboto");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto-cyrillic-regular.eot"),
+    /* IE9 Compat Modes */
+    url("../fonts/roboto-cyrillic-regular.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */
+    url("../fonts/roboto-cyrillic-regular.woff2") format("woff2"),
+    url("../fonts/roboto-cyrillic-regular.woff") format("woff"),
+    url("../fonts/roboto-cyrillic-regular.ttf") format("truetype"),
+    /* Safari, Android, iOS */
+    url("../fonts/roboto-cyrillic-regular.svg#Roboto") format("svg"),
+    /* Legacy iOS */
+    local("Roboto");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-family: @font-family--base;
+  font-style: normal;
+  font-weight: 600;
+  font-size: @font-size--h2mobile;
+  line-height: @line-height--h2mobile;
+  background-color: @white;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

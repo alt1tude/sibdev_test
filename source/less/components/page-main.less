@@ -1,0 +1,49 @@
+.page-main {
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 37px;
+  padding-left: 12px;
+  padding-right: 20px;
+  position: relative;
+  transition: 0.5s;
+  z-index: 6;
+  background-color: @white;
+
+  &__title {
+    color: @black;
+    font-family: @font-family--base;
+    font-style: normal;
+    font-weight: 600;
+    font-size: @font-size--h1mobile;
+    line-height: @line-height--h1mobile;
+
+    text-align: right;
+    margin: 0;
+    margin-bottom: 25px;
+    padding: 0;
+
+    // outline: 1px solid black;
+  }
+
+  outline: 1px solid black;
+}
+
+@media (min-width: @screen-tablet) {
+  .page-main {
+    width: auto;
+    padding-left: 26px;
+    padding-right: 26px;
+
+  }
+
+}
+
+
+@media (min-width: @screen-desktop) {
+  .page-main {
+    max-width: @screen-desktop;
+
+
+  }
+
+}

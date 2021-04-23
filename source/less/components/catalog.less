@@ -1,0 +1,183 @@
+.catalog {
+  // background-color: #fafafa;
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 16px;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: calc(50% - 5px);
+      left: -5px;
+      width: 10px;
+      height: 10px;
+      border-radius: 0px 3px 0px;
+      transform: rotate(45deg);
+      background: linear-gradient(45deg, transparent 6px, #e9e9e9 0);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: calc(50% - 5px);
+      right: -5px;
+      width: 10px;
+      height: 10px;
+      border-radius: 0px 3px 0px;
+      transform: rotate(-135deg);
+      background: linear-gradient(45deg, transparent 6px, #e9e9e9 0);
+    }
+
+
+    &:hover,
+    &:focus {
+      border: 1px solid @red;
+
+      &::before,
+      &::after {
+        border-top: 1px solid @red;
+        border-right: 1px solid @red;
+      }
+    }
+
+    &:active {
+      border: 2px solid @red;
+
+      &::before {
+        left: -6px;
+      }
+
+      &::after {
+        right: -6px;
+      }
+    }
+  }
+
+  &__item:last-child {
+    margin: 0;
+  }
+
+  &__information {
+    margin-top: 16px;
+    margin-left: 20px;
+
+    & tbody {
+      display: flex;
+      flex-direction: column;
+    }
+
+    & tr {
+      display: flex;
+      flex-direction: column;
+    }
+
+    & tr:first-child {
+      margin-bottom: 26px;
+    }
+  }
+
+  &__title {
+    color: @black;
+    font-family: @font-family--card;
+    font-style: normal;
+    font-weight: 700;
+    font-size: @font-size--cardmobile;
+    line-height: 16px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__description {
+    color: rgba(0, 0, 0, 0.5);
+    font-family: @font-family--card;
+    font-style: normal;
+    font-weight: 400;
+    font-size: @font-size--cardmobile;
+    line-height: 16px;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__value {
+    color: @red;
+    font-family: @font-family--card;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__discount {
+    color: rgba(0, 0, 0, 0.5);
+    font-family: @font-family--card;
+    font-style: normal;
+    font-weight: 400;
+    font-size: @font-size--cardmobile;
+    line-height: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__link {}
+
+}
+
+@media (min-width: @screen-tablet) {
+  .catalog {
+
+
+
+    &__list {
+      outline: 1px solid black;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &__item {
+      width: 296px;
+
+    }
+
+  }
+}
+
+
+@media (min-width: @screen-desktop) {
+  .catalog {
+
+
+    &__list {
+      outline: 1px solid black;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &__item {
+      width: 348px;
+    }
+
+
+
+  }
+}
+

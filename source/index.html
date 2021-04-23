@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Beco Coupons</title>
+  <link rel="preload" href="fonts/" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+  <script src="js/picturefill.min.js" async=""></script>
+</head>
+
+<body>
+  <header class="page-header">
+    <a class="page-header__logo" href="index.html">
+      <picture>
+        <source media="(min-width: 1300px)" srcset="img/logo-beco.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-beco.svg">
+        <img class="page-header__logo-image" width="24" height="24" src="img/logo-beco.svg" alt="Beco Coupons">
+      </picture>BECO
+    </a>
+    <nav class="main-nav">
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item site-list__item--active"><a>Каталог</a></li>
+        <li class="site-list__item"><a href="#">Здоровье</a></li>
+        <li class="site-list__item"><a href="#">Красота</a></li>
+        <li class="site-list__item"><a href="#">Развлечения</a></li>
+        <li class="site-list__item"><a href="#">Авто</a></li>
+      </ul>
+      <button class="main-nav__toggle" type="button">
+        <svg class="main-nav__toggle-icon" xmlns="http://www.w3.org/2000/svg" width="26" height="20" viewBox="0 0 24 18">
+          <rect y="16" width="24" height="2"></rect>
+          <rect y="8" width="24" height="2"></rect>
+          <rect width="24" height="2"></rect>
+        </svg><span class="visually-hidden">Открыть меню</span>
+      </button>
+    </nav>
+  </header>
+  <main class="page-main">
+    <h1 class="visually-hidden">Beco - каталог купонов</h1>
+    <h2 class="page-main__title">Развлечения</h2>
+    <form class="form" action="#">
+      <fieldset class="form__field">
+        <label for="search">
+          <input type="text" id="search" name="search" placeholder="Какой магазин вам нужен?">
+          <svg class="form__field-search" width="20" height="20" viewBox="0 0 20 20">
+            <path d="M4.16667 9.16667C4.16667 12.8486 7.15143 15.8333 10.8333 15.8333C14.5152 15.8333 17.5 12.8486 17.5 9.16667C17.5 5.48477 14.5152 2.5 10.8333 2.5C7.15143 2.5 4.16667 5.48477 4.16667 9.16667Z" stroke-width="2" />
+            <path d="M2.5 17.5L6.125 13.875" stroke-width="2" stroke-linecap="round">
+          </svg>
+        </label>
+      </fieldset>
+    </form>
+    <div class="page-main__wrapper">
+      <section class="catalog">
+        <ul class="catalog__list">
+          <li class="catalog__item">
+            <table class="catalog__information">
+              <tr>
+                <td class="catalog__title">Пробка на мира</td>
+                <td class="catalog__description">Вечер для двоих</td>
+              </tr>
+              <tr>
+                <td class="catalog__value">50%</td>
+                <td class="catalog__discount">Скидка</td>
+            </table>
+            <a class="catalog__link" href="#catalog-item.html">
+              <picture>
+                <source type="image/webp" media="(min-width: 1300px" srcset="img/wine-desktop@1x.webp">
+                <source type="image/webp" media="(min-width: 768px" srcset="img/wine-tablet@1x.webp">
+                <source type="image/webp" srcset="img/wine-mobile@1x.webp">
+                <source media="(min-width: 1300px)" srcset="img/wine-desktop@1x.png">
+                <source media="(min-width: 768px)" srcset="img/wine-tablet@1x.png">
+                <img class="catalog__image" src="img/wine-mobile@1x.png" alt="Пробка на мира">
+              </picture>
+            </a>
+          </li>
+          <li class="catalog__item">
+            <table class="catalog__information">
+              <tr>
+                <td class="catalog__title">Кино и немцы</td>
+                <td class="catalog__description">Бесплатный бокал пива</td>
+              </tr>
+              <tr>
+                <td class="catalog__value">Варвар</td>
+                <td class="catalog__discount">Промокод</td>
+            </table>
+            <a class="catalog__link" href="#catalog-item.html">
+              <picture>
+                <source type="image/webp" media="(min-width: 1300px" srcset="img/beer-desktop@1x.webp">
+                <source type="image/webp" media="(min-width: 768px" srcset="img/beer-tablet@1x.webp">
+                <source type="image/webp" srcset="img/beer-mobile@1x.webp">
+                <source media="(min-width: 1300px)" srcset="img/beer-desktop@1x.png">
+                <source media="(min-width: 768px)" srcset="img/beer-tablet@1x.png">
+                <img class="catalog__image" src="img/beer-mobile@1x.png" alt="Кино и немцы">
+              </picture>
+            </a>
+          </li>
+          <li class="catalog__item">
+            <table class="catalog__information">
+              <tr>
+                <td class="catalog__title">Valery cakes</td>
+                <td class="catalog__description">Торт</td>
+              </tr>
+              <tr>
+                <td class="catalog__value">30%</td>
+                <td class="catalog__discount">Скидка</td>
+            </table>
+            <a class="catalog__link" href="#catalog-item.html">
+              <picture>
+                <source type="image/webp" media="(min-width: 1300px" srcset="img/cakes-desktop@1x.webp">
+                <source type="image/webp" media="(min-width: 768px" srcset="img/cakes-table@1x.webp">
+                <source type="image/webp" srcset="img/cakes-mobile@1x.webp">
+                <source media="(min-width: 1300px)" srcset="img/cakes-desktop@1x.png">
+                <source media="(min-width: 768px)" srcset="img/cakes-table@1x.png">
+                <img class="catalog__image" src="img/cakes-mobile@1x.png" alt="Valery cakes">
+              </picture>
+            </a>
+          </li>
+          <li class="catalog__item">
+            <table class="catalog__information">
+              <tr>
+                <td class="catalog__title">Sushi sell</td>
+                <td class="catalog__description">Набор "Праздник"</td>
+              </tr>
+              <tr>
+                <td class="catalog__value">45%</td>
+                <td class="catalog__discount">Скидка</td>
+            </table>
+            <a class="catalog__link" href="#catalog-item.html">
+              <picture>
+                <source type="image/webp" media="(min-width: 1300px" srcset="img/sushi-desktop@1x.webp">
+                <source type="image/webp" media="(min-width: 768px" srcset="img/sushi-table@1x.webp">
+                <source type="image/webp" srcset="img/sushi-mobile@1x.webp">
+                <source media="(min-width: 1300px)" srcset="img/sushi-desktop@1x.png">
+                <source media="(min-width: 768px)" srcset="img/sushi-table@1x.png">
+                <img class="catalog__image" src="img/sushi-mobile@1x.png" alt="Sushi sell">
+              </picture>
+            </a>
+          </li>
+          <li class="catalog__item">
+            <table class="catalog__information">
+              <tr>
+                <td class="catalog__title">Mangosteen</td>
+                <td class="catalog__description">Фрукт в подарок</td>
+              </tr>
+              <tr>
+                <td class="catalog__value">J130</td>
+                <td class="catalog__discount">Купон</td>
+            </table>
+            <a class="catalog__link" href="#catalog-item.html">
+              <picture>
+                <source type="image/webp" media="(min-width: 1300px" srcset="img/fruit-desktop@1x.webp">
+                <source type="image/webp" media="(min-width: 768px" srcset="img/fruit-tablet@1x.webp">
+                <source type="image/webp" srcset="img/fruit-mobile@1x.webp">
+                <source media="(min-width: 1300px)" srcset="img/fruit-desktop@1x.png">
+                <source media="(min-width: 768px)" srcset="img/fruit-tablet@1x.png">
+                <img class="catalog__image" src="img/fruit-mobile@1x.png" alt="Mangosteen">
+              </picture>
+            </a>
+          </li>
+          <li class="catalog__item">
+            <table class="catalog__information">
+              <tr>
+                <td class="catalog__title">Теленок табака</td>
+                <td class="catalog__description">Стейк "Мачете"</td>
+              </tr>
+              <tr>
+                <td class="catalog__value">20%</td>
+                <td class="catalog__discount">Скидка</td>
+            </table>
+            <a class="catalog__link" href="#catalog-item.html">
+              <picture>
+                <source type="image/webp" media="(min-width: 1300px" srcset="img/steak-desktop@1x.webp">
+                <source type="image/webp" media="(min-width: 768px" srcset="img/steak-tablet@1x.webp">
+                <source type="image/webp" srcset="img/steak-mobile@1x.webp">
+                <source media="(min-width: 1300px)" srcset="img/steak-desktop@1x.png">
+                <source media="(min-width: 768px)" srcset="img/steak-tablet@1x.png">
+                <img class="catalog__image" src="img/steak-mobile@1x.png" alt="Теленок табака">
+              </picture>
+            </a>
+          </li>
+          <li class="catalog__item">
+            <table class="catalog__information">
+              <tr>
+                <td class="catalog__title">Fire food</td>
+                <td class="catalog__description">Вторая шаурма в подарок</td>
+              </tr>
+              <tr>
+                <td class="catalog__value">Огонь</td>
+                <td class="catalog__discount">Промокод</td>
+            </table>
+            <a class="catalog__link" href="#catalog-item.html">
+              <picture>
+                <source type="image/webp" media="(min-width: 1300px" srcset="img/fire_food-desktop@1x.webp">
+                <source type="image/webp" media="(min-width: 768px" srcset="img/fruit-tablet@1x.webp">
+                <source type="image/webp" srcset="img/fire_food-mobile@1x.webp">
+                <source media="(min-width: 1300px)" srcset="img/fire_food-desktop@1x.png">
+                <source media="(min-width: 768px)" srcset="img/fire_food-tablet@1x.png">
+                <img class="catalog__image" src="img/fire_food-mobile@1x.png" alt="Fire food">
+              </picture>
+            </a>
+          </li>
+          <li class="catalog__item">
+            <table class="catalog__information">
+              <tr>
+                <td class="catalog__title">Aroma cremeria</td>
+                <td class="catalog__description">Джелато "Пармезан"</td>
+              </tr>
+              <tr>
+                <td class="catalog__value">20%</td>
+                <td class="catalog__discount">Скидка</td>
+            </table>
+            <a class="catalog__link" href="#catalog-item.html">
+              <picture>
+                <source type="image/webp" media="(min-width: 1300px" srcset="img/ice_cream-desktop@1x.webp">
+                <source type="image/webp" media="(min-width: 768px" srcset="img/ice_cream-tablet@1x.webp">
+                <source type="image/webp" srcset="img/ice_cream-mobile@1x.webp">
+                <source media="(min-width: 1300px)" srcset="img/ice_cream-desktop@1x.png">
+                <source media="(min-width: 768px)" srcset="img/ice_cream-tablet@1x.png">
+                <img class="catalog__image" src="img/ice_cream-mobile@1x.png" alt="Aroma crimeria">
+              </picture>
+            </a>
+          </li>
+          <li class="catalog__item">
+            <table class="catalog__information">
+              <tr>
+                <td class="catalog__title">Пробка на мира</td>
+                <td class="catalog__description">Вечер для двоих</td>
+              </tr>
+              <tr>
+                <td class="catalog__value">50%</td>
+                <td class="catalog__discount">Скидка</td>
+            </table>
+            <a class="catalog__link" href="#catalog-item.html">
+              <picture>
+                <source type="image/webp" media="(min-width: 1300px" srcset="img/wine-desktop@1x.webp">
+                <source type="image/webp" media="(min-width: 768px" srcset="img/wine-tablet@1x.webp">
+                <source type="image/webp" srcset="img/wine-mobile@1x.webp">
+                <source media="(min-width: 1300px)" srcset="img/wine-desktop@1x.png">
+                <source media="(min-width: 768px)" srcset="img/wine-tablet@1x.png">
+                <img class="catalog__image" src="img/wine-mobile@1x.png" alt="Пробка на мира">
+              </picture>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </main>
+  <footer class="page-footer">
+  </footer>
+  <script src="js/slider.min.js"></script>
+</body>
+
+</html>
